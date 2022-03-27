@@ -1,0 +1,62 @@
+nav {
+  height: 4em;
+  position: fixed;
+  z-index: 1030;
+  transition: all 0.5s ease-in-out;
+}
+.navigation {
+  height: 100vh;
+}
+.burger {
+  z-index: 1030;
+  cursor: pointer;
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  span {
+    position: relative;
+    display: block;
+    margin: 0.2em;
+    height: 0.2em;
+    width: 1.8em;
+    background-color: $font-color;
+  }
+}
+.burger-active #line1 {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(45deg);
+}
+.burger-active #line2 {
+  transition: all 0.5s ease-in-out;
+  margin-top: -0.4em;
+  transform: rotate(-45deg);
+}
+.burger-active span {
+  transition: all 0.5s ease-in-out;
+  background-color: $main-color;
+}
+.navigation-menu {
+  transition: all 1s ease-in-out;
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: $trans-color;
+  z-index: 1000;
+  ul {
+    margin-top: 5em;
+    list-style: none;
+  }
+  ul li a {
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: $main-color;
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 0.95rem + 0.25vw, 1.25rem);
+  }
+  ul li a:hover {
+    color: $accent-color;
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,27 @@
+.contact-wrap {
+  height: 75vh;
+  background-color: $font-color;
+  color: $main-color;
+}
+.contact-header {
+  position: relative;
+  height: 25vh;
+  h2 {
+    top: 1em;
+    position: absolute;
+    margin-left: 2.5em;
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 0.95rem + 0.25vw, 1.25rem);
+  }
+  span {
+    opacity: 0.3;
+    margin-left: 0.5em;
+    font-size: 10rem;
+    font-size: clamp(10rem, 0.95rem + 0.25vw, 1.25rem);
+  }
+}
+.information-wrap {
+  height: 5vh;
+  margin-left: 5em;
+  margin-right: 5em;
+}

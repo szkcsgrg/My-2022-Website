@@ -1,0 +1,57 @@
+.about-welcome {
+  height: 100vh;
+  margin-left: 5em;
+  h2 {
+    font-size: 7rem;
+    font-size: clamp(7rem, 3.3rem + -1.5vw, 1.5rem);
+  }
+}
+.about-room {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/Sample1.png");
+}
+.about-aboutme {
+  height: 100vh;
+  overflow: hidden;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+#aboutme-image {
+  height: 80vh;
+  width: auto;
+}
+.about-reference {
+  height: 50vh;
+  background-color: $font-color;
+  color: $main-color;
+}
+.swiper-wrapper {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: $accent-color;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+.about-images {
+  height: 150vh;
+}
+.image-wrap {
+  margin-top: 10em;
+}
+#about-first-image,
+#about-second-image {
+  height: 90vh;
+}
+#about-first-image {
+  margin-top: -10em;
+}
+#about-second-image {
+  margin-top: 10em;
+}

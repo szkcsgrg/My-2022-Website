@@ -1,0 +1,80 @@
+html,
+body {
+  background-color: $main-color;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  font-family: "Averta Demo PE Cutted Demo";
+  transition: background-color 1s ease-in-out;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+::-webkit-scrollbar {
+  display: none;
+} /*
+::-webkit-scrollbar-thumb {
+  background-color: $font-color;
+  border-radius: 2em;
+} */ /*
+.cursor {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 0.15em solid $accent-color;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+*/
+
+#button {
+  background-color: $accent-color;
+  color: $main-color;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+#button:hover {
+  opacity: 0.5;
+}
+.text-wrap {
+  h1 {
+    font-size: 3rem;
+    font-size: clamp(3rem, 0.95rem + 0.25vw, 1.25rem);
+  }
+  h1 span {
+    font-weight: bold;
+    color: $accent-color;
+  }
+}
+.text-wrap,
+.button-wrap {
+  p {
+    font-size: 1rem;
+    font-size: clamp(1.25rem, 0.9rem + 0.5vw, 1.5rem);
+    margin-bottom: 1.5em;
+  }
+  a {
+    color: $accent-color;
+    text-decoration: none;
+  }
+  span {
+    color: $secondary-color;
+  }
+}
+.accent span {
+  color: $accent-color;
+  font-weight: bold;
+}
+.text-wrap p a:hover {
+  text-decoration: underline;
+}
