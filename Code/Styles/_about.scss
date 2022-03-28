@@ -91,12 +91,13 @@
   .image-wrap {
     margin-top: 10em;
   }
+  /*
   #about-first-image,
   #about-second-image {
     object-fit: cover;
     height: 25em;
     width: 35em;
-  }
+  }*/
 }
 
 @media screen and (max-width: $medium) {
@@ -128,6 +129,12 @@
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
+  #about-first-image,
+  #about-second-image {
+    object-fit: cover;
+    height: 50em;
+    width: 30em;
+  }
 }
 @media screen and (max-width: $small) {
   .about-welcome {
@@ -157,17 +164,5 @@
   .swiper-slide {
     padding-left: 1em;
     padding-right: 1em;
-  }
-  .about-images {
-    height: 175vh;
-  }
-  .image-wrap {
-    margin-top: 10em;
-  }
-  #about-first-image,
-  #about-second-image {
-    object-fit: cover;
-    height: 25em;
-    width: 25em;
   }
 }

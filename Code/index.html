@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,20 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szakács Gergő - Front-End Website Developer</title>
 
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
+    <!-- Css -->
     <link rel="stylesheet" href="../Styles/main.css">
-    <link rel="preload" href="AvertaDemoPECuttedDemo-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Cursor -->
-    <div class="cursor"></div>
-
     <!-- Navbar Start -->
     <nav class="d-flex justify-content-between align-items-center navigation">
         <div class="burger burger-active" onclick="burgerO()"> <!-- col-1 ms-auto -->
@@ -31,9 +34,9 @@
             <div class="col-12 d-flex justify-content-center align-items-start">
                 <ul class="d-flex flex-column align-items-center">
                     <li><a href="#">Home</a></li>
-                    <li><a href="../Pages/about.html">About</a></li>
-                    <li><a href="../Pages/projects.html">Projects</a></li>
-                    <li><a href="../Pages/about.html#references">References</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="../about.html#references">References</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -53,16 +56,18 @@
             <div class="text-wrap col-12 col-lg-6">
                 <span>Szakács Gergő</span>
                 <h1><span>Front-End</span> Website Developer</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Maxime vero ipsum doloremque sapiente
-                    qui dolores. <br> Tempora recusandae cupiditate doloribus aperiam.</p>
+                <p class="accent">
+                    If you are looking for a <span>Front-End</span> Website Developer you are at the right place. <br>
+                    Together we can create your ideas and form it for the best version, for you and your customers.
+                </p>
                 <p><a href="#contact"><span id="button">Contact Me</span></a> or read more <a
-                        href="../Pages/about.html">about</a> me</p>
+                        href="../about.html">about</a> me</p>
             </div>
         </div>
         <!--Welcome End-->
 
         <!--Projects Start-->
-        <div class="row home-projects-holder">
+        <div class="row home-projects-holder" id="projects">
             <div class="col-12 home-projects-header">
                 <h2>Latest Projects</h2>
                 <span>Latest Projects</span>
@@ -73,7 +78,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="home-projects-text">
                         <p><span>Portfolio</span></p>
-                        <h3><a href="">Szurmik Marcell - Video Editor</a></h3>
+                        <h3><a href="../projects.html">Szurmik Marcell - Video Editor</a></h3>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -102,7 +107,7 @@
                     </div>    
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-around text-wrap">
-                    <p><a href="">GitHub</a></p>
+                    <p><a href="https://github.com/szkcsgrg">GitHub</a></p>
                 </div>
             </div>
         </div>

@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szakács Gergő - About Me</title>
-
-    <!-- Fonts -->
-    <link rel="preload" href="AvertaDemoPECuttedDemo-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -19,6 +16,11 @@
 
     <!-- Css files -->
     <link rel="stylesheet" href="../Styles/main.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,9 +33,9 @@
         <div class="navigation-menu row d-none">
             <div class="col-12 d-flex justify-content-center align-items-start">
                 <ul class="d-flex flex-column align-items-center">
-                    <li><a href="../Pages/index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="../Pages/projects.html">Projects</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
                     <li><a href="#references">References</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -54,26 +56,26 @@
         <!-- Welcome End -->
 
         <!-- Workspace Image Start -->
-        <div class="row about-room"></div>
+        <div class="row about-room d-none"></div> <!-- d-lg-block -->
         <!-- Workspace Image End -->
 
         <!-- About Section Start -->
         <div class="row about-aboutme align-items-center d-flex justify-content-center flex-row-reverse">
             <div class="col-12 col-lg-6 about-aboutme-image d-flex justify-content-evenly">
-                <img src="../Images/DSC_0992.png" alt="Image of me." id="aboutme-image">
+                <img src="../Images/DSC_0088.png" alt="Image of me." id="aboutme-image">
             </div>
             <div class="col-12 col-lg-6 about-aboutme-text text-wrap">
                 <h2>Szakács Gergő</h2>
-                <p class="accent">If you are looking for a <span>Front-End</span> Website Developer you are at the right place.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsam minus quisquam voluptatibus sequi <br> porro consequatur velit odio ducimus recusandae.</p> 
-                <p>Consequuntur,  doloribus harum iure est exercitationem iste asperiores. Repudiandae, voluptatem.</p>
-                <p>View the <a href="../Pages/projects.html">Latest Projects</a> or <a href="#contact">Contact me.</a> </p>
+                <p>Five years ago when I officially started to learn IT in school I thought it will be easy. Later on when I started to use <i>Java</i> and <i>C#</i> I recognised this is not my field... <br> 
+                When I first met with <i>HTML</i> and <i>CSS</i> I know I want to work in that field.  <br> More information about my knowledge can be seen in my <a target="_blank" href="https://drive.google.com/drive/folders/1sAdNNc-l2TDtQUWr9vv6opq0c2EAIzT_?usp=sharing">Resume</a>.</p>
+                <p> Now I am here to make some awesome webpages. If you have any idea or any question feel free to get in contact with me. </p>
+                <p>View the <a href="../index.html#projects">Latest Projects</a> or <a href="#contact">Contact me.</a> </p>
             </div>
         </div>
         <!-- About Section End -->
 
         <!-- Reference Start -->
-        <div class="row about-reference align-items-center" id="references">
+        <div class="row about-reference align-items-center d-none" id="references">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide align-items-center d-flex flex-column flex-lg-row" data-swpier-autoplay="2000">
@@ -82,7 +84,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet dignissimos doloremque suscipit, nisi nesciunt alias ab impedit cumque amet!</p>
                         </div>
                         <div class="col-12 col-lg-6 button-wrap">
-                            <p><a href="#"><span id="button">View the Project</span></a>
+                            <p><a href="../index.html#projects"><span id="button">View the Project</span></a>
                         </div>
                     </div>
                     <div class="swiper-slide align-items-center d-flex flex-column flex-lg-row" data-swpier-autoplay="2000">
@@ -91,7 +93,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eveniet dignissimos doloremque suscipit, nisi nesciunt alias ab impedit cumque amet!</p>
                         </div>
                         <div class="col-12 col-lg-6 button-wrap">
-                            <p><a href="#"><span id="button">View the Project</span></a>
+                            <p><a href="../index.html#projects"><span id="button">View the Project</span></a>
                         </div>
                     </div>
                 </div>
@@ -102,10 +104,10 @@
         <!-- Reference End -->
 
         <!-- Images Start -->
-        <div class="row about-images align-items-center">
+        <div class="row about-images align-items-center d-none d-lg-block">
             <div class="col-12 d-flex justify-content-evenly image-wrap flex-column flex-lg-row align-items-center">
-                <img src="../Images/DSC_0992.png" id="about-first-image">
-                <img src="../Images/DSC_0992.png" id="about-second-image">
+                <img src="../Images/DSC_0104.png" id="about-first-image">
+                <img src="../Images/DSC_0053.png" id="about-second-image">
             </div>
         </div>
         <!-- Images End -->
@@ -128,7 +130,7 @@
                     </div>    
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-around text-wrap">
-                    <p><a href="">GitHub</a></p>
+                    <p><a href="https://github.com/szkcsgrg">GitHub</a></p>
                 </div>
             </div>
         </div>

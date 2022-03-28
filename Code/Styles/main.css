@@ -22,12 +22,6 @@
   background: #fdfde3;
 }
 
-@font-face {
-  font-family: "averta_demo_pe_cutted_demoRg";
-  src: url("avertademopecutteddemo-regular-webfont.woff2") format("woff2"), url("avertademopecutteddemo-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 html,
 body {
   background-color: #e6e6e6;
@@ -39,7 +33,7 @@ body {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-  font-family: "Averta Demo PE Cutted Demo";
+  font-family: "Telex", sans-serif;
   transition: background-color 1s ease-in-out;
 }
 
@@ -275,7 +269,7 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  background-image: url("../Images/Sample.png");
+  background-image: url("../Images/Marci.png");
 }
 
 #projectTwo {
@@ -529,13 +523,13 @@ nav {
     margin-top: 10em;
   }
 
+  /*
   #about-first-image,
-#about-second-image {
-    -o-object-fit: cover;
-       object-fit: cover;
+  #about-second-image {
+    object-fit: cover;
     height: 25em;
     width: 35em;
-  }
+  }*/
 }
 @media screen and (max-width: 768px) {
   .about-welcome {
@@ -573,6 +567,14 @@ nav {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
+
+  #about-first-image,
+#about-second-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 50em;
+    width: 30em;
+  }
 }
 @media screen and (max-width: 576px) {
   .about-welcome {
@@ -609,22 +611,6 @@ nav {
   .swiper-slide {
     padding-left: 1em;
     padding-right: 1em;
-  }
-
-  .about-images {
-    height: 175vh;
-  }
-
-  .image-wrap {
-    margin-top: 10em;
-  }
-
-  #about-first-image,
-#about-second-image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 25em;
-    width: 25em;
   }
 }
 .contact-wrap {

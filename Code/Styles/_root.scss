@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  font-family: "Averta Demo PE Cutted Demo";
+  font-family: $font;
   transition: background-color 1s ease-in-out;
 }
 .container-fluid {
