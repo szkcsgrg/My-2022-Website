@@ -43,7 +43,7 @@
   height: 150vh;
 }
 .image-wrap {
-  margin-top: 10em;
+  margin-top: 0;
 }
 #about-first-image,
 #about-second-image {
@@ -54,4 +54,120 @@
 }
 #about-second-image {
   margin-top: 10em;
+}
+
+@media screen and (max-width: $large) {
+  .about-aboutme {
+    height: 175vh;
+  }
+  #aboutme-image {
+    margin-top: 2em;
+    object-fit: cover;
+    height: 30em;
+    width: 40em;
+  }
+  .about-aboutme-text {
+    margin-top: 2em;
+  }
+  .about-reference {
+    height: 75vh;
+  }
+  .swiper-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .swiper-slide {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .about-images {
+    height: 150vh;
+  }
+  .image-wrap {
+    margin-top: 10em;
+  }
+  #about-first-image,
+  #about-second-image {
+    object-fit: cover;
+    height: 25em;
+    width: 35em;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .about-welcome {
+    margin-left: 2.5em;
+  }
+  .about-aboutme {
+    height: 175vh;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+  #aboutme-image {
+    margin-top: 2em;
+    object-fit: cover;
+    height: 40em;
+    width: 40em;
+  }
+  .about-aboutme-text {
+    margin-top: 1em;
+  }
+  .about-reference {
+    height: 75vh;
+  }
+  .swiper-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .swiper-slide {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+@media screen and (max-width: $small) {
+  .about-welcome {
+    margin-left: 1em;
+  }
+  .about-aboutme {
+    height: 180vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  #aboutme-image {
+    margin-top: 2em;
+    object-fit: cover;
+    height: 30em;
+    width: 40em;
+  }
+  .about-aboutme-text {
+    margin-top: 2em;
+  }
+  .about-reference {
+    height: 75vh;
+  }
+  .swiper-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .swiper-slide {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .about-images {
+    height: 175vh;
+  }
+  .image-wrap {
+    margin-top: 10em;
+  }
+  #about-first-image,
+  #about-second-image {
+    object-fit: cover;
+    height: 25em;
+    width: 25em;
+  }
 }

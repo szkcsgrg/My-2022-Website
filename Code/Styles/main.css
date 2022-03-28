@@ -220,7 +220,7 @@ nav {
 }
 
 .home-projects-holder {
-  height: 625vh;
+  height: 125vh;
 }
 
 .home-projects-header {
@@ -248,20 +248,30 @@ nav {
   position: relative;
 }
 
+.home-projects-text h3 a {
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+.home-projects-text h3 a:hover {
+  text-decoration: none;
+  color: #f700ff;
+  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 0.95rem + 0.25vw, 1.25rem);
+}
+.home-projects-text p span {
+  color: #f700ff;
+}
+
 .home-project-image {
   text-decoration: none;
   position: relative;
   overflow: hidden;
 }
 
-.project-image {
-  background-color: red;
-  width: 20em;
-}
-
 #projectOne {
   height: 100vh;
-  background-position: 90%;
+  background-position-x: 90%;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -313,41 +323,26 @@ nav {
   background-image: url("../Images/Sample1.png");
 }
 
-.home-projects-text p span {
-  color: #f700ff;
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .home-welcome {
     overflow-y: hidden;
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 120vh;
+    height: 150vh;
   }
 
   .home-projects-header h2 {
-    margin-left: 1em;
+    top: 0.8em;
+    margin-left: 0.5em;
   }
 
   .home-projects-header span {
-    display: none;
+    font-size: 5rem;
+    font-size: clamp(5rem, 0.95rem + 0.25vw, 1.25rem);
+    margin-left: 0.1em;
   }
 
   .home-projects-item {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #projectOne,
-#projectTwo,
-#projectThree,
-#projectFour,
-#projectFive,
-#projectSix {
-    height: 50vh;
-    background-position: left center;
-    background-size: auto;
-    background-attachment: scroll;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -379,33 +374,45 @@ nav {
 #projectFour,
 #projectFive,
 #projectSix {
-    height: 80vh;
-    max-width: 80vh;
-    background-position: left center;
+    height: 75vh;
+    max-width: 60vh;
+    background-position: center;
     background-size: auto;
     background-attachment: scroll;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .home-welcome {
     overflow-y: hidden;
-    height: 150vh;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 120vh;
   }
 
   .home-projects-header h2 {
-    top: 0.8em;
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
 
   .home-projects-header span {
-    font-size: 5rem;
-    font-size: clamp(5rem, 0.95rem + 0.25vw, 1.25rem);
-    margin-left: 0.1em;
+    display: none;
   }
 
   .home-projects-item {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #projectOne,
+#projectTwo,
+#projectThree,
+#projectFour,
+#projectFive,
+#projectSix {
+    height: 75vh;
+    max-width: 60vh;
+    background-position: center;
+    background-size: auto;
+    background-attachment: scroll;
   }
 }
 .about-welcome {
@@ -461,7 +468,7 @@ nav {
 }
 
 .image-wrap {
-  margin-top: 10em;
+  margin-top: 0;
 }
 
 #about-first-image,
@@ -477,6 +484,149 @@ nav {
   margin-top: 10em;
 }
 
+@media screen and (max-width: 992px) {
+  .about-aboutme {
+    height: 175vh;
+  }
+
+  #aboutme-image {
+    margin-top: 2em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 30em;
+    width: 40em;
+  }
+
+  .about-aboutme-text {
+    margin-top: 2em;
+  }
+
+  .about-reference {
+    height: 75vh;
+  }
+
+  .swiper-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .swiper-slide {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .swiper-button-prev,
+.swiper-button-next {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .about-images {
+    height: 150vh;
+  }
+
+  .image-wrap {
+    margin-top: 10em;
+  }
+
+  #about-first-image,
+#about-second-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 25em;
+    width: 35em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-welcome {
+    margin-left: 2.5em;
+  }
+
+  .about-aboutme {
+    height: 175vh;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+
+  #aboutme-image {
+    margin-top: 2em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 40em;
+    width: 40em;
+  }
+
+  .about-aboutme-text {
+    margin-top: 1em;
+  }
+
+  .about-reference {
+    height: 75vh;
+  }
+
+  .swiper-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .swiper-slide {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-welcome {
+    margin-left: 1em;
+  }
+
+  .about-aboutme {
+    height: 180vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #aboutme-image {
+    margin-top: 2em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 30em;
+    width: 40em;
+  }
+
+  .about-aboutme-text {
+    margin-top: 2em;
+  }
+
+  .about-reference {
+    height: 75vh;
+  }
+
+  .swiper-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .swiper-slide {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .about-images {
+    height: 175vh;
+  }
+
+  .image-wrap {
+    margin-top: 10em;
+  }
+
+  #about-first-image,
+#about-second-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 25em;
+    width: 25em;
+  }
+}
 .contact-wrap {
   height: 75vh;
   background-color: #2a2a2a;
@@ -505,4 +655,59 @@ nav {
   height: 5vh;
   margin-left: 5em;
   margin-right: 5em;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-wrap {
+    height: 75vh;
+  }
+
+  .contact-header h2 {
+    margin-left: 2.5em;
+  }
+
+  .contact-header span {
+    display: none;
+  }
+
+  .information-wrap {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-wrap {
+    height: 75vh;
+  }
+
+  .contact-header h2 {
+    margin-left: 1em;
+  }
+
+  .contact-header span {
+    display: none;
+  }
+
+  .information-wrap {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact-wrap {
+    height: 75vh;
+  }
+
+  .contact-header h2 {
+    margin-left: 1em;
+  }
+
+  .contact-header span {
+    display: none;
+  }
+
+  .information-wrap {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
 }

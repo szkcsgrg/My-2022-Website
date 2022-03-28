@@ -31,7 +31,7 @@
   display: block;
 }
 .home-projects-holder {
-  height: 625vh;
+  height: 125vh; //625
 }
 .home-projects-header {
   position: relative;
@@ -56,19 +56,31 @@
   margin-right: 10em;
   position: relative;
 }
+.home-projects-text {
+  h3 a {
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: $font-color;
+  }
+  h3 a:hover {
+    text-decoration: none;
+    color: $accent-color;
+    font-size: 1.9rem;
+    font-size: clamp(1.9rem, 0.95rem + 0.25vw, 1.25rem);
+  }
+  p span {
+    color: $accent-color;
+  }
+}
 .home-project-image {
   text-decoration: none;
   position: relative;
   overflow: hidden;
 }
-.project-image {
-  background-color: red;
-  width: 20em;
-}
 
 #projectOne {
   height: 100vh;
-  background-position: 90%;
+  background-position-x: 90%;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -114,40 +126,27 @@
   background-attachment: fixed;
   background-image: url("../Images/Sample1.png");
 }
-.home-projects-text {
-  p span {
-    color: $accent-color;
-  }
-}
-@media screen and (max-width: $small) {
+
+@media screen and (max-width: $large) {
   .home-welcome {
     overflow-y: hidden;
-    margin-left: 1em;
-    margin-right: 1em;
-    height: 120vh;
+    height: 150vh;
   }
   .home-projects-header h2 {
-    margin-left: 1em;
+    top: 0.8em;
+    margin-left: 0.5em;
   }
   .home-projects-header span {
-    display: none;
+    font-size: 5rem;
+    font-size: clamp(5rem, 0.95rem + 0.25vw, 1.25rem);
+    margin-left: 0.1em;
   }
   .home-projects-item {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #projectOne,
-  #projectTwo,
-  #projectThree,
-  #projectFour,
-  #projectFive,
-  #projectSix {
-    height: 50vh;
-    background-position: left center;
-    background-size: auto;
-    background-attachment: scroll;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
+
 @media screen and (max-width: $medium) {
   .home-welcome {
     overflow-y: hidden;
@@ -173,29 +172,40 @@
   #projectFour,
   #projectFive,
   #projectSix {
-    height: 80vh;
-    max-width: 80vh;
-    background-position: left center;
+    height: 75vh;
+    max-width: 60vh;
+    background-position: center;
     background-size: auto;
     background-attachment: scroll;
   }
 }
-@media screen and (max-width: $large) {
+@media screen and (max-width: $small) {
   .home-welcome {
     overflow-y: hidden;
-    height: 150vh;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 120vh;
   }
   .home-projects-header h2 {
-    top: 0.8em;
-    margin-left: 0.5em;
+    margin-left: 1em;
   }
   .home-projects-header span {
-    font-size: 5rem;
-    font-size: clamp(5rem, 0.95rem + 0.25vw, 1.25rem);
-    margin-left: 0.1em;
+    display: none;
   }
   .home-projects-item {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #projectOne,
+  #projectTwo,
+  #projectThree,
+  #projectFour,
+  #projectFive,
+  #projectSix {
+    height: 75vh;
+    max-width: 60vh;
+    background-position: center;
+    background-size: auto;
+    background-attachment: scroll;
   }
 }

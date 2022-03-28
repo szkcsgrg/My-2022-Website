@@ -25,3 +25,48 @@
   margin-left: 5em;
   margin-right: 5em;
 }
+@media screen and (max-width: $large) {
+  .contact-wrap {
+    height: 75vh;
+  }
+  .contact-header h2 {
+    margin-left: 2.5em;
+  }
+  .contact-header span {
+    display: none;
+  }
+  .information-wrap {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+}
+@media screen and (max-width: $medium) {
+  .contact-wrap {
+    height: 75vh;
+  }
+  .contact-header h2 {
+    margin-left: 1em;
+  }
+  .contact-header span {
+    display: none;
+  }
+  .information-wrap {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+}
+@media screen and (max-width: $small) {
+  .contact-wrap {
+    height: 75vh;
+  }
+  .contact-header h2 {
+    margin-left: 1em;
+  }
+  .contact-header span {
+    display: none;
+  }
+  .information-wrap {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+}
