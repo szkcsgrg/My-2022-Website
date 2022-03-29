@@ -5,7 +5,8 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 .navigation {
-  height: 100vh;
+  overflow: hidden;
+  height: 100%;
 }
 .burger {
   z-index: 1030;
