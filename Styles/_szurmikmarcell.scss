@@ -1,0 +1,94 @@
+.szurmikmarcell-welcome {
+  min-height: 100vh;
+  margin-left: 5em;
+  margin-right: 5em;
+  h2 {
+    font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
+  }
+}
+.szurmikmarcell-showoff {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/MarciShowOff.png");
+}
+.szurmikmarcell-topic {
+  margin-left: 10em;
+  margin-right: 10em;
+  min-height: 100vh;
+}
+.szurmikmarcell-layout {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/MarciShowOff.png");
+}
+.szurmikmarcell-overview {
+  margin-left: 10em;
+  margin-right: 10em;
+  min-height: 100vh;
+}
+.szurmikmarcell-reference {
+  padding-left: 10em;
+  padding-right: 10em;
+  min-height: 50vh;
+  background-color: $font-color;
+  color: $main-color;
+}
+.szurmikmarcell-nextcase {
+  min-height: 75vh;
+  margin-left: 10em;
+  margin-right: 10em;
+
+  h2,
+  a {
+    transition: all 0.5s ease-in-out;
+    font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
+    color: $font-color;
+  }
+  h2 a:hover {
+    text-decoration: underline;
+    color: $accent-color;
+  }
+}
+@media screen and (max-width: $medium) {
+  .szurmikmarcell-welcome {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+  .szurmikmarcell-topic {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+  .szurmikmarcell-overview {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+  .szurmikmarcell-reference {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+@media screen and (max-width: $small) {
+  .szurmikmarcell-welcome {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .szurmikmarcell-topic {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .szurmikmarcell-overview {
+    height: 175vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .szurmikmarcell-reference {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
