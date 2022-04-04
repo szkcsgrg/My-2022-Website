@@ -87,6 +87,10 @@ body {
   color: #f700ff;
 }
 
+.text-wrap,
+.button-wrap {
+  transition: all 1s ease-in-out;
+}
 .text-wrap p,
 .button-wrap p {
   font-size: clamp(1.25rem, 0.5rem + 0.5vw, 1.5rem);
@@ -120,7 +124,7 @@ nav {
 
 .navigation {
   overflow: hidden;
-  height: 100%;
+  height: 100vh;
 }
 
 .burger {
@@ -182,7 +186,7 @@ nav {
 }
 
 .home-welcome {
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 10em;
   margin-right: 10em;
 }
@@ -411,12 +415,11 @@ nav {
   }
 }
 .about-welcome {
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 5em;
 }
 .about-welcome h2 {
-  font-size: 7rem;
-  font-size: clamp(7rem, 3.3rem - 1.5vw, 1.5rem);
+  font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
 }
 
 .about-room {
@@ -429,7 +432,7 @@ nav {
 }
 
 .about-aboutme {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   margin-left: 5em;
   margin-right: 5em;
@@ -441,7 +444,7 @@ nav {
 }
 
 .about-reference {
-  height: 50vh;
+  min-height: 50vh;
   background-color: #2a2a2a;
   color: #e6e6e6;
 }
@@ -459,7 +462,7 @@ nav {
 }
 
 .about-images {
-  height: 150vh;
+  min-height: 150vh;
 }
 
 .image-wrap {
@@ -480,10 +483,9 @@ nav {
 }
 
 @media screen and (max-width: 992px) {
-  .about-aboutme {
+  /*.about-aboutme {
     height: 175vh;
-  }
-
+  }*/
   #aboutme-image {
     margin-top: 2em;
     -o-object-fit: cover;
@@ -496,10 +498,10 @@ nav {
     margin-top: 2em;
   }
 
+  /*
   .about-reference {
     height: 75vh;
-  }
-
+  }*/
   .swiper-wrapper {
     margin-left: 1em;
     margin-right: 1em;
@@ -516,10 +518,10 @@ nav {
     margin-right: 2em;
   }
 
+  /*
   .about-images {
     height: 150vh;
-  }
-
+  }*/
   .image-wrap {
     margin-top: 10em;
   }
@@ -538,7 +540,6 @@ nav {
   }
 
   .about-aboutme {
-    height: 175vh;
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
@@ -555,10 +556,10 @@ nav {
     margin-top: 1em;
   }
 
+  /*
   .about-reference {
     height: 75vh;
-  }
-
+  }*/
   .swiper-wrapper {
     margin-left: 1em;
     margin-right: 1em;
@@ -583,8 +584,6 @@ nav {
   }
 
   .about-aboutme {
-    margin-bottom: 10vh;
-    height: 190vh;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -601,16 +600,122 @@ nav {
     margin-top: 2em;
   }
 
+  /*
   .about-reference {
     height: 75vh;
-  }
-
+  }*/
   .swiper-wrapper {
     margin-left: 1em;
     margin-right: 1em;
   }
 
   .swiper-slide {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+.szurmikmarcell-welcome {
+  min-height: 100vh;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+.szurmikmarcell-welcome h2 {
+  font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
+}
+
+.szurmikmarcell-showoff {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/MarciShowOff.png");
+}
+
+.szurmikmarcell-topic {
+  margin-left: 10em;
+  margin-right: 10em;
+  min-height: 100vh;
+}
+
+.szurmikmarcell-layout {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/MarciShowOff.png");
+}
+
+.szurmikmarcell-overview {
+  margin-left: 10em;
+  margin-right: 10em;
+  min-height: 100vh;
+}
+
+.szurmikmarcell-reference {
+  padding-left: 10em;
+  padding-right: 10em;
+  min-height: 50vh;
+  background-color: #2a2a2a;
+  color: #e6e6e6;
+}
+
+.szurmikmarcell-nextcase {
+  min-height: 75vh;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.szurmikmarcell-nextcase h2,
+.szurmikmarcell-nextcase a {
+  transition: all 0.5s ease-in-out;
+  font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
+  color: #2a2a2a;
+}
+.szurmikmarcell-nextcase h2 a:hover {
+  text-decoration: underline;
+  color: #f700ff;
+}
+
+@media screen and (max-width: 768px) {
+  .szurmikmarcell-welcome {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+
+  .szurmikmarcell-topic {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+
+  .szurmikmarcell-overview {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+
+  .szurmikmarcell-reference {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .szurmikmarcell-welcome {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .szurmikmarcell-topic {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .szurmikmarcell-overview {
+    height: 175vh;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .szurmikmarcell-reference {
     padding-left: 1em;
     padding-right: 1em;
   }

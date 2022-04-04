@@ -1,9 +1,8 @@
 .about-welcome {
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 5em;
   h2 {
-    font-size: 7rem;
-    font-size: clamp(7rem, 3.3rem + -1.5vw, 1.5rem);
+    font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
   }
 }
 .about-room {
@@ -15,7 +14,7 @@
   background-image: url("../Images/Sample1.png");
 }
 .about-aboutme {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   margin-left: 5em;
   margin-right: 5em;
@@ -25,7 +24,7 @@
   width: auto;
 }
 .about-reference {
-  height: 50vh;
+  min-height: 50vh;
   background-color: $font-color;
   color: $main-color;
 }
@@ -40,7 +39,7 @@
   margin-right: 5em;
 }
 .about-images {
-  height: 150vh;
+  min-height: 150vh;
 }
 .image-wrap {
   margin-top: 0;
@@ -57,9 +56,9 @@
 }
 
 @media screen and (max-width: $large) {
-  .about-aboutme {
+  /*.about-aboutme {
     height: 175vh;
-  }
+  }*/
   #aboutme-image {
     margin-top: 2em;
     object-fit: cover;
@@ -68,10 +67,10 @@
   }
   .about-aboutme-text {
     margin-top: 2em;
-  }
+  } /*
   .about-reference {
     height: 75vh;
-  }
+  }*/
   .swiper-wrapper {
     margin-left: 1em;
     margin-right: 1em;
@@ -84,10 +83,10 @@
   .swiper-button-next {
     margin-left: 2em;
     margin-right: 2em;
-  }
+  } /*
   .about-images {
     height: 150vh;
-  }
+  }*/
   .image-wrap {
     margin-top: 10em;
   }
@@ -105,7 +104,7 @@
     margin-left: 2.5em;
   }
   .about-aboutme {
-    height: 175vh;
+    // height: 175vh;
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
@@ -117,10 +116,10 @@
   }
   .about-aboutme-text {
     margin-top: 1em;
-  }
+  } /*
   .about-reference {
     height: 75vh;
-  }
+  }*/
   .swiper-wrapper {
     margin-left: 1em;
     margin-right: 1em;
@@ -141,8 +140,8 @@
     margin-left: 1em;
   }
   .about-aboutme {
-    margin-bottom: 10vh;
-    height: 190vh;
+    //margin-bottom: 10vh;
+    //height: 190vh;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -154,10 +153,10 @@
   }
   .about-aboutme-text {
     margin-top: 2em;
-  }
+  } /*
   .about-reference {
     height: 75vh;
-  }
+  }*/
   .swiper-wrapper {
     margin-left: 1em;
     margin-right: 1em;
