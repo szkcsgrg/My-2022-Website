@@ -203,7 +203,7 @@ nav {
 
 .home-welcome-image .img-wrap:before {
   content: "";
-  background-image: linear-gradient(to top, #e6e6e6, rgba(230, 230, 230, 0));
+  background-image: linear-gradient(to top, rgb(230, 230, 230), rgba(230, 230, 230, 0));
   position: absolute;
   height: 70%;
   max-width: 100%;

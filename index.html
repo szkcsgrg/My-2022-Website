@@ -5,7 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <title>Szakács Gergő - Front-End Website Developer</title>
+    <meta name="og:title" content="Szakács Gergő - Front-End Website Developer">
+    <meta name="og:type" content="article">
+    <meta name="url" content="https://szakacsgergo.com/">
+    <meta name="description" content="If you are looking for a Front-End Website Developer you are at the right place.
+    Together we can create your ideas and form it for the best version, for you and your customers.">
+    <meta name="og:description" content="If you are looking for a Front-End Website Developer you are at the right place.
+    Together we can create your ideas and form it for the best version, for you and your customers.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@szkcsgrg">
+    <meta name="twitter:title" content="Szakács Gergő - Front-End Website Developer">
+    <meta name="twitter:description" content="If you are looking for a Front-End Website Developer you are at the right place.
+    Together we can create your ideas and form it for the best version, for you and your customers.">
+    <meta name="twitter:image" content="https://szakacsgergo.com/Images/icon.png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -47,78 +61,79 @@
     </nav>
     <!-- Navbar End -->
 
-    <!--Container Start-->
-    <div class="container-fluid">
-        <!--Welcome Start-->
-        <div class="row home-welcome align-items-center d-flex flex-row-reverse">
-            <div class="home-welcome-image text-center col-12 col-lg-6">
-                <div class="img-wrap">
-                    <img src="Images/DSC_0992Fade.png" alt="img" id="home-welcome-image">
-                </div>
-            </div>
-            <div class="text-wrap col-12 col-lg-6">
-                <span>Szakács Gergő</span>
-                <h1><span>Front-End</span> Website Developer</h1>
-                <p class="accent">
-                    If you are looking for a <span>Front-End</span> Website Developer you are at the right place. <br>
-                    Together we can create your ideas and form it for the best version, for you and your customers.
-                </p>
-                <p><a href="#contact"><span id="button">Contact Me</span></a> or read more <a
-                        href="about.html">about</a> me</p>
-            </div>
-        </div>
-        <!--Welcome End-->
-
-        <!--Projects Start-->
-        <div class="row home-projects-holder" id="projects">
-            <div class="col-12 home-projects-header">
-                <h2>Latest Projects</h2>
-                <span>Latest Projects</span>
-            </div>
-            
-            <!-- Project 1 Start-->
-            <div class="row home-projects-item align-items-center justify-content-center projectone">
-                <div class="col-12 col-lg-6">
-                    <div class="home-projects-text">
-                        <p><span>Portfolio</span></p>
-                        <h3><a href="Projects/szurmikmarcell.html">Szurmik Marcell - Video Editor</a></h3>
+    <main role="main">
+        <!--Container Start-->
+        <article class="container-fluid" itemscope itemtype="https://schema.org/Person">
+            <!--Welcome Start-->
+            <section class="row home-welcome align-items-center d-flex flex-row-reverse">
+                <div class="home-welcome-image text-center col-12 col-lg-6">
+                    <div class="img-wrap">
+                        <img src="Images/DSC_0992Fade.png" alt="Image of Szakács Gergő" id="home-welcome-image">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="home-project-image" id="projectOne"></div>
+                <div class="text-wrap col-12 col-lg-6">
+                    <span itemprop="author">Szakács Gergő</span>
+                    <h1><span>Front-End</span> Website Developer</h1>
+                    <p class="accent" itemprop="descreption">
+                        If you are looking for a <span>Front-End</span> Website Developer you are at the right place. <br>
+                        Together we can create your ideas and form it for the best version, for you and your customers.
+                    </p>
+                    <p><a href="#contact"><span id="button">Contact Me</span></a> or read more <a
+                            href="about.html">about</a> me</p>
                 </div>
-            </div>
-            <!-- Project 1 End-->
-        </div>
-        <!--Projects End-->
+            </section>
+            <!--Welcome End-->
 
-        <!-- Contact Start -->
-        <div class="row contact-wrap" id="contact">
-            <div class="col-12 contact-header align-items-start">
-                <h2>Contact Me</h2>
-                <span>Contact Me</span>
-            </div>
-            <div class="col-12 information-wrap d-flex justify-content-center align-items-center flex-column flex-lg-row">
-                <div class="col-12 col-md-6 d-flex justify-content-evenly flex-column flex-md-row">
-                    <div class="text-center text-wrap accent">
-                        <span>email</span>
-                        <p>info@szakacsgergo.com</p>
+            <!--Projects Start-->
+            <section class="row home-projects-holder" id="projects">
+                <div class="col-12 home-projects-header">
+                    <h2>Latest Projects</h2>
+                    <span>Latest Projects</span>
+                </div>
+                
+                <!-- Project 1 Start-->
+                <div class="row home-projects-item align-items-center justify-content-center projectone" itemprop="worksFor">
+                    <div class="col-12 col-lg-6">
+                        <div class="home-projects-text">
+                            <p><span>Portfolio</span></p>
+                            <h3><a href="Projects/szurmikmarcell.html">Szurmik Marcell - Video Editor</a></h3>
+                        </div>
                     </div>
-                    <div class="text-center text-wrap accent">
-                        <span>phone</span>
-                        <p>+36306826046</p>
-                    </div>    
+                    <div class="col-12 col-lg-6">
+                        <div class="home-project-image" id="projectOne"></div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-around text-wrap">
-                    <p><a href="https://github.com/szkcsgrg">GitHub</a></p>
+                <!-- Project 1 End-->
+            </section>
+            <!--Projects End-->
+
+            <!-- Contact Start -->
+            <section class="row contact-wrap" id="contact">
+                <div class="col-12 contact-header align-items-start">
+                    <h2>Contact Me</h2>
+                    <span>Contact Me</span>
                 </div>
-            </div>
-        </div>
-        <!-- Contact End -->
+                <div class="col-12 information-wrap d-flex justify-content-center align-items-center flex-column flex-lg-row">
+                    <div class="col-12 col-md-6 d-flex justify-content-evenly flex-column flex-md-row">
+                        <div class="text-center text-wrap accent">
+                            <span>email</span>
+                            <p>info@szakacsgergo.com</p>
+                        </div>
+                        <div class="text-center text-wrap accent">
+                            <span>phone</span>
+                            <p>+36306826046</p>
+                        </div>    
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-around text-wrap">
+                        <p><a href="https://github.com/szkcsgrg">GitHub</a></p>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact End -->
 
-    </div>
-    <!--Container End-->
-
+        </article>
+        <!--Container End-->
+    </main>
     <script src="Scritps/jquery.min.js"></script>
     <script src="Scritps/burger.js"></script>
     <script src="Scritps/changebg.js"></script>
