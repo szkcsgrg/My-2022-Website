@@ -620,7 +620,7 @@ nav {
   margin-right: 5em;
 }
 .project-welcome h2 {
-  font-size: clamp(1.8rem, 1rem + 10vw, 4.5rem);
+  font-size: clamp(1.6rem, 10vw, 4.5rem);
 }
 
 .szurmikmarcell-showoff {
@@ -642,9 +642,10 @@ nav {
 }
 
 .project-topic {
+  margin-top: 40vh;
+  margin-bottom: 40vh;
   margin-left: 10em;
   margin-right: 10em;
-  min-height: 100vh;
 }
 
 .szurmikmarcell-layout {
@@ -666,12 +667,15 @@ nav {
 }
 
 .project-overview {
+  margin-top: 40vh;
+  margin-bottom: 40vh;
   margin-left: 10em;
   margin-right: 10em;
-  min-height: 100vh;
 }
 
 .project-reference {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   padding-left: 10em;
   padding-right: 10em;
   min-height: 50vh;
@@ -680,7 +684,8 @@ nav {
 }
 
 .project-nextcase {
-  min-height: 75vh;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
   margin-left: 10em;
   margin-right: 10em;
 }
@@ -702,11 +707,15 @@ nav {
   }
 
   .project-topic {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
 
   .project-overview {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
@@ -723,12 +732,15 @@ nav {
   }
 
   .project-topic {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     margin-left: 1em;
     margin-right: 1em;
   }
 
   .project-overview {
-    height: 175vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     margin-left: 1em;
     margin-right: 1em;
   }
