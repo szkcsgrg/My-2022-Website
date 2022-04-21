@@ -24,11 +24,14 @@
   width: auto;
 }
 .about-reference {
-  min-height: 50vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   background-color: $font-color;
   color: $main-color;
 }
 .swiper-wrapper {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   margin-left: 10em;
   margin-right: 10em;
 }
@@ -38,11 +41,10 @@
   margin-left: 5em;
   margin-right: 5em;
 }
-.about-images {
-  min-height: 150vh;
-}
 .image-wrap {
-  margin-top: 0;
+  min-height: auto;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
 #about-first-image,
 #about-second-image {
@@ -83,12 +85,11 @@
   .swiper-button-next {
     margin-left: 2em;
     margin-right: 2em;
-  } /*
-  .about-images {
-    height: 150vh;
-  }*/
+  } 
   .image-wrap {
-    margin-top: 10em;
+    min-height: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
   }
   /*
   #about-first-image,

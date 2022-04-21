@@ -1,4 +1,4 @@
-.szurmikmarcell-welcome {
+.project-welcome {
   min-height: 100vh;
   margin-left: 5em;
   margin-right: 5em;
@@ -12,9 +12,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../Images/MarciShowOff.png");
+  background-image: url("../Images/marcell/marcellShowOff.png");
 }
-.szurmikmarcell-topic {
+.sorokmenti-showoff {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/sorokmenti/SorokmentiShowOff.jpg");
+}
+.project-topic {
   margin-left: 10em;
   margin-right: 10em;
   min-height: 100vh;
@@ -25,21 +33,30 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../Images/MarciShowOff.png");
+  background-image: url("../Images/marcell/marcellShowOff.png");
 }
-.szurmikmarcell-overview {
+.sorokmenti-layout {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/sorokmenti/SorokmentiShowOff.jpg");
+
+}
+.project-overview {
   margin-left: 10em;
   margin-right: 10em;
   min-height: 100vh;
 }
-.szurmikmarcell-reference {
+.project-reference {
   padding-left: 10em;
   padding-right: 10em;
   min-height: 50vh;
   background-color: $font-color;
   color: $main-color;
 }
-.szurmikmarcell-nextcase {
+.project-nextcase {
   min-height: 75vh;
   margin-left: 10em;
   margin-right: 10em;
@@ -56,38 +73,38 @@
   }
 }
 @media screen and (max-width: $medium) {
-  .szurmikmarcell-welcome {
+  .project-welcome {
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
-  .szurmikmarcell-topic {
+  .project-topic {
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
-  .szurmikmarcell-overview {
+  .project-overview {
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
-  .szurmikmarcell-reference {
+  .project-reference {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 }
 @media screen and (max-width: $small) {
-  .szurmikmarcell-welcome {
+  .project-welcome {
     margin-left: 1em;
     margin-right: 1em;
   }
-  .szurmikmarcell-topic {
+  .project-topic {
     margin-left: 1em;
     margin-right: 1em;
   }
-  .szurmikmarcell-overview {
+  .project-overview {
     height: 175vh;
     margin-left: 1em;
     margin-right: 1em;
   }
-  .szurmikmarcell-reference {
+  .project-reference {
     padding-left: 1em;
     padding-right: 1em;
   }
