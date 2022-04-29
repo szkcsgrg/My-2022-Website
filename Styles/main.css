@@ -1,13 +1,13 @@
 .project1 {
-  background: #f0e3fd;
+  background: #d7e5fc;
 }
 
 .project2 {
-  background: #f4f4d7;
+  background: #f0e3fd;
 }
 
 .project3 {
-  background: #d7e5fc;
+  background: #f4f4d7;
 }
 
 .project4 {
@@ -218,7 +218,7 @@ nav {
 }
 
 .home-projects-holder {
-  height: 225vh;
+  height: 325vh;
 }
 
 .home-projects-header {
@@ -273,10 +273,19 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
-  background-image: url("../Images/marcell/marcell.png");
+  background-image: url("../Images/konyvtar/konyvtar.png");
 }
 
 #projectTwo {
+  height: 100vh;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-image: url("../Images/marcell/marcell.png");
+}
+
+#projectThree {
   height: 100vh;
   background-position-x: 90%;
   background-repeat: no-repeat;
@@ -286,14 +295,6 @@ nav {
 }
 
 /*
-#projectThree {
-  height: 100vh;
-  background-position-x: 90%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-image: url("../Images/Sample.png");
-}
 #projectFour {
   height: 100vh;
   background-position-x: 90%;
@@ -641,6 +642,15 @@ nav {
   background-image: url("../Images/sorokmenti/SorokmentiShowOff.jpg");
 }
 
+.konyvtar-showoff {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/konyvtar/konyvtarShowOff.png");
+}
+
 .project-topic {
   margin-top: 40vh;
   margin-bottom: 40vh;
@@ -664,6 +674,15 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   background-image: url("../Images/sorokmenti/SorokmentiShowOff.jpg");
+}
+
+.konyvtar-layout {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../Images/konyvtar/konyvtarShowOff.png");
 }
 
 .project-overview {
