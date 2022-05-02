@@ -51,31 +51,17 @@ body {
   display: none;
 }
 
-/*
-::-webkit-scrollbar-thumb {
-  background-color: $font-color;
-  border-radius: 2em;
-} */
-/*
-.cursor {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  border: 0.15em solid $accent-color;
-  position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-}
-*/
 #button {
   background-color: #f700ff;
   color: #e6e6e6;
   padding: 0.5em;
   border-radius: 0.5em;
+  transition: all 0.5s ease-in-out;
 }
 
 #button:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
 }
 
 .text-wrap h1 {
@@ -183,6 +169,31 @@ nav {
 .navigation-menu ul li a:hover {
   color: #f700ff;
   font-size: 3rem;
+}
+
+footer {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  background-color: #111;
+}
+
+.footer-wrap {
+  color: #e6e6e6;
+  transition: all 1s ease-in-out;
+}
+.footer-wrap p {
+  font-size: clamp(1.25rem, 0.5rem + 0.5vw, 1.5rem);
+}
+.footer-wrap a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+.footer-wrap span {
+  color: #4a4a4a;
+}
+
+.footer-wrap p a:hover {
+  text-decoration: underline;
 }
 
 .home-welcome {
@@ -767,89 +778,5 @@ nav {
   .project-reference {
     padding-left: 1em;
     padding-right: 1em;
-  }
-}
-.contact-wrap {
-  height: 75vh;
-  background-color: #2a2a2a;
-  color: #e6e6e6;
-}
-
-.contact-header {
-  position: relative;
-  height: 25vh;
-}
-.contact-header h2 {
-  top: 1em;
-  position: absolute;
-  margin-left: 2.5em;
-  font-size: 2.5rem;
-  font-size: clamp(2.5rem, 0.95rem + 0.25vw, 1.25rem);
-}
-.contact-header span {
-  opacity: 0.3;
-  margin-left: 0.5em;
-  font-size: 10rem;
-  font-size: clamp(10rem, 0.95rem + 0.25vw, 1.25rem);
-}
-
-.information-wrap {
-  height: 5vh;
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
-@media screen and (max-width: 992px) {
-  .contact-wrap {
-    height: 75vh;
-  }
-
-  .contact-header h2 {
-    margin-left: 2.5em;
-  }
-
-  .contact-header span {
-    display: none;
-  }
-
-  .information-wrap {
-    margin-left: 0;
-    margin-bottom: 5em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contact-wrap {
-    height: 75vh;
-  }
-
-  .contact-header h2 {
-    margin-left: 1em;
-  }
-
-  .contact-header span {
-    display: none;
-  }
-
-  .information-wrap {
-    margin-left: 0;
-    margin-bottom: 5em;
-  }
-}
-@media screen and (max-width: 576px) {
-  .contact-wrap {
-    height: 75vh;
-  }
-
-  .contact-header h2 {
-    margin-left: 0.5em;
-  }
-
-  .contact-header span {
-    display: none;
-  }
-
-  .information-wrap {
-    margin-left: 0;
-    margin-bottom: 5em;
   }
 }

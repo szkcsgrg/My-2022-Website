@@ -21,30 +21,19 @@ body {
 }
 ::-webkit-scrollbar {
   display: none;
-} /*
-::-webkit-scrollbar-thumb {
-  background-color: $font-color;
-  border-radius: 2em;
-} */ /*
-.cursor {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  border: 0.15em solid $accent-color;
-  position: absolute;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
-}
-*/
+} 
 
 #button {
   background-color: $accent-color;
   color: $main-color;
   padding: 0.5em;
   border-radius: 0.5em;
+  transition: all 0.5s ease-in-out;
+  
 }
 #button:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
 }
 .text-wrap {
   h1 {
