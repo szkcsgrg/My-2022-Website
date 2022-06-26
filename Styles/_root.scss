@@ -21,7 +21,7 @@ body {
 }
 ::-webkit-scrollbar {
   display: none;
-} 
+}
 
 #button {
   background-color: $accent-color;
@@ -29,7 +29,6 @@ body {
   padding: 0.5em;
   border-radius: 0.5em;
   transition: all 0.5s ease-in-out;
-  
 }
 #button:hover {
   opacity: 0.6;
@@ -66,4 +65,15 @@ body {
 }
 .text-wrap p a:hover {
   text-decoration: underline;
+}
+
+.d-show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+.d-not {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
 }
