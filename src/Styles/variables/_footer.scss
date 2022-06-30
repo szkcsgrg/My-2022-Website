@@ -1,0 +1,28 @@
+footer {
+  background-color: $font-color;
+  color: $main-color;
+  height: 20vh;
+  p::selection,
+  p a::selection {
+    background-color: $main-color;
+    color: $font-color;
+  }
+  p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+  }
+  a {
+    text-decoration: none;
+    color: $main-color;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $main-color;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  footer {
+    height: 15vh;
+  }
+}

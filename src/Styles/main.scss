@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Variables
+@import "variables/color";
+@import "variables/breakpoints";
+@import "variables/fonts";
+@import "variables/root";
+@import "variables/navbar";
+@import "variables/footer";
+
+//Pages
+@import "pages/home";
+@import "pages/about";

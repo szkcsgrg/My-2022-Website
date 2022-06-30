@@ -1,0 +1,101 @@
+.about-landing {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+}
+
+.about-me {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+}
+
+.about-images {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+#aboutmeImage {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 100%;
+}
+
+.reference {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: $secondary-color;
+  h3,
+  p {
+    color: $main-color;
+  }
+}
+.swiper-wrapper {
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+.swiper-slide {
+  margin: 0;
+}
+
+@media screen and (min-width: $medium) {
+  .about-landing {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-left: 2.5vh;
+    margin-left: 2.5vh;
+  }
+
+  .about-me {
+    margin-top: 15vh;
+    //margin-bottom: 15vh;
+    margin-left: 2.5vh;
+    margin-left: 2.5vh;
+  }
+  #aboutmeImage {
+    width: 80%;
+  }
+
+  .reference {
+    margin-top: 7.5vh;
+    //margin-bottom: 7.5vh;
+  }
+  .swiper-wrapper {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+}
+@media screen and (min-width: $large) {
+  .about-landing {
+    margin-top: 30vh;
+    margin-bottom: 25vh;
+    margin-left: 5vh;
+    margin-left: 5vh;
+  }
+
+  .about-me {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    margin-left: 5vh;
+    margin-left: 5vh;
+  }
+
+  #aboutmeImage {
+    width: 60%;
+  }
+  .reference {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .swiper-wrapper {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+@media screen and (min-width: $elarge) {
+}

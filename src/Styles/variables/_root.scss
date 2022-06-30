@@ -1,0 +1,224 @@
+html,
+body {
+  background-color: $main-color;
+  color: $font-color;
+  font-family: $fontHind;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  transition: background-color 1s ease-in-out;
+}
+main {
+  overflow: hidden;
+  ::selection {
+    background-color: $font-color;
+    color: $main-color;
+  }
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+  Animation
+*/
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+.d-show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+.d-not {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+
+/*
+  Custom Utils 
+*/
+.cursor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $font-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  z-index: 1090;
+  pointer-events: none;
+}
+#click-to-copy {
+  cursor: pointer;
+}
+
+/*
+  Button 
+
+.button-wrap {
+  margin-top: 1em;
+  transition: all 1s ease-in-out;
+  a {
+    color: $main-color;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    text-decoration: none;
+  }
+}
+#button_1 {
+  cursor: pointer;
+  color: $main-color;
+  background-color: $accent-color;
+  padding: 0.5em;
+  border: 1px solid $accent-color;
+  transition: all 0.5s ease-in-out;
+}
+#button_1:hover,
+#button_1:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em $accent-color;
+  transform: translateY(-0.25em);
+  background-color: transparent;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  transition: all 0.5s ease-in-out;
+}
+#button_2,
+.button_propd {
+  cursor: pointer;
+  border: 1px solid $accent-color;
+  background-color: transparent;
+  color: $accent-color;
+  padding: 0.5em;
+  transition: all 0.5s ease-in-out;
+}
+#button_2:hover,
+#button_2:focus,
+.button_propd:hover,
+.button_propd:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em $accent-color;
+  transform: translateY(-0.25em);
+  border: 1px solid $accent-color;
+  background-color: $accent-color;
+  color: $main-color;
+  transition: all 0.5s ease-in-out;
+}
+*/
+
+/*
+  Image wrap
+*/
+.image-wrap {
+  max-height: 100vh;
+  max-width: 80vw;
+  margin-bottom: 5vh;
+}
+
+/*
+  Text wrap
+*/
+.text-wrap {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  h1 {
+    font-size: clamp(3.5rem, 2.5vw, 5rem);
+    font-family: $fontTelex;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: clamp(3rem, 2.5vw, 4rem);
+    font-family: $fontRoboto;
+    font-weight: lighter;
+  }
+  h2 span {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+  }
+  h3 {
+    //font-size: clamp(1.75rem, 2.5vw, 3em);
+    color: $font-color;
+    font-family: $fontHind;
+  }
+  p {
+    font-family: $fontHind;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+  a,
+  Link {
+    color: $accent-color;
+    font-family: $fontHind;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    text-decoration: none;
+  }
+  span {
+    color: $accent-color;
+  }
+  .bold {
+    font-weight: 900;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+  .behind {
+    font-family: $fontRoboto;
+    position: absolute;
+    top: -15vh;
+    font-size: clamp(4.5rem, 2.5vw, 7rem);
+    color: $secondary-color;
+    opacity: 0.2;
+    ::selection {
+      background-color: $font-color;
+      color: $main-color;
+      -webkit-text-stroke: 0px;
+    }
+    span {
+      -webkit-text-stroke: 1px $secondary-color;
+      color: transparent;
+    }
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .text-wrap {
+    .behind {
+      top: -2vh;
+      font-size: clamp(6rem, 2.5vw, 8rem);
+    }
+    p {
+      font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+    }
+  }
+}
+@media screen and (min-width: $large) {
+  .text-wrap {
+    h1 {
+      font-size: clamp(5rem, 2.5vw, 8rem);
+    }
+    h2 {
+      font-size: clamp(4rem, 2.5vw, 7rem);
+    }
+    .behind {
+      top: -1vh;
+      font-size: clamp(8rem, 2.5vw, 12rem);
+    }
+    p {
+      font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    }
+  }
+}
