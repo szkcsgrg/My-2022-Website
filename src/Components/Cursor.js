@@ -2,16 +2,22 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 
-let CursorChangeLogo;
-let CrusorChangeLogoEnd;
-let CursorChangeNavbarLinks;
-let CursorChangeNavbarLinksEnd;
-let CursorChangeFooter;
-let CursorChangeFooterEnd;
-let CursorChangeProject;
-let CursorChangeProjectEnd;
-let CursorChangeHamburger;
-let CursorChangeHamburgerEnd;
+let CursorChangeLogo,
+ CrusorChangeLogoEnd,
+ CursorChangeNavbarLinks,
+ CursorChangeNavbarLinksEnd,
+ CursorChangeFooter,
+ CursorChangeFooterEnd,
+ CursorChangeHamburger,
+ CursorChangeHamburgerEnd, 
+ CursorChangeProject1,
+ CursorChangeProject1End,
+ CursorChangeProject2,  
+ CursorChangeProject2End,
+ CursorChangeProject3,
+ CursorChangeProject3End,
+ CursorChangeProject4,
+ CursorChangeProject4End;
 
 function Cursor() {
   const [mousePosition, setMousePosition] = useState({
@@ -34,6 +40,7 @@ function Cursor() {
   }, [])
   const variants = {
     default:{
+      backgroundColor: "black",
       x: mousePosition.x-6,
       y: mousePosition.y-6
     },
@@ -58,9 +65,25 @@ function Cursor() {
       y: mousePosition.y-6,
       backgroundColor: "white"
     },
-    project:{
+    project1:{
       x: mousePosition.x-6,
       y: mousePosition.y-6,
+      backgroundColor: "pink"
+    },
+    project2:{
+      x: mousePosition.x-6,
+      y: mousePosition.y-6,
+      backgroundColor: "#8fb9fc"
+    },
+    project3:{
+      x: mousePosition.x-6,
+      y: mousePosition.y-6,
+      backgroundColor: "#cc98fc"
+    },
+    project4:{
+      x: mousePosition.x-6,
+      y: mousePosition.y-6,
+      backgroundColor: "orange"
     },
     hamburger: {
       x: mousePosition.x-6,
@@ -72,13 +95,19 @@ function Cursor() {
   CursorChangeLogo = () => setCursorVariant("logo");
   CursorChangeNavbarLinks = () => setCursorVariant("navbarLinks");
   CursorChangeFooter = () => setCursorVariant("footer");
-  CursorChangeProject = () => setCursorVariant("project")
+  CursorChangeProject1 = () => setCursorVariant("project1")
+  CursorChangeProject2 = () => setCursorVariant("project2")
+  CursorChangeProject3 = () => setCursorVariant("project3")
+  CursorChangeProject4 = () => setCursorVariant("project4")
   CursorChangeHamburger = () => setCursorVariant("hamburger");
 
   CrusorChangeLogoEnd = () => setCursorVariant("default");
   CursorChangeNavbarLinksEnd = () => setCursorVariant("default");
   CursorChangeFooterEnd = () => setCursorVariant("default");
-  CursorChangeProjectEnd = () => setCursorVariant("default");
+  CursorChangeProject1End = () => setCursorVariant("default");
+  CursorChangeProject2End = () => setCursorVariant("default");
+  CursorChangeProject3End = () => setCursorVariant("default");
+  CursorChangeProject4End = () => setCursorVariant("default");
   CursorChangeHamburgerEnd = () => setCursorVariant("default");
   return (
     <motion.div
@@ -91,5 +120,12 @@ function Cursor() {
   )
 }
 
-export {CursorChangeLogo, CrusorChangeLogoEnd, CursorChangeNavbarLinks, CursorChangeNavbarLinksEnd, CursorChangeFooter, CursorChangeFooterEnd, CursorChangeProject, CursorChangeProjectEnd, CursorChangeHamburger, CursorChangeHamburgerEnd};
+export {CursorChangeLogo, CrusorChangeLogoEnd,
+   CursorChangeNavbarLinks, CursorChangeNavbarLinksEnd, 
+   CursorChangeFooter, CursorChangeFooterEnd, 
+   CursorChangeHamburger, CursorChangeHamburgerEnd, 
+   CursorChangeProject1, CursorChangeProject1End,
+   CursorChangeProject2, CursorChangeProject2End,
+   CursorChangeProject3, CursorChangeProject3End,
+   CursorChangeProject4, CursorChangeProject4End};
 export default Cursor

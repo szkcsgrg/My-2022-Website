@@ -1,15 +1,12 @@
 //Components
 import Cursor from "./Components/Cursor";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 //Pages
 import Home from "./Home";
 import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
 import Konyvtar from "./Konyvtar";
 import Kincseanda from "./Kincseanda";
 import Szurmik from "./Szurmik";
@@ -65,11 +62,13 @@ function App() {
     window.removeEventListener("scroll", ChangeColor);
   }
   componentDidMount();
+  console.log(location.pathname);
+  if(location.pathname == "/" || location.pathname == "/about"){
   return (
     <>
       <Cursor />
       <Navbar />
-      
+
       <TransitionGroup>
         <CSSTransition
           timeout={500}
@@ -79,8 +78,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/projects/konyvtar" element={<Konyvtar />} />
           <Route path="/projects/kincseanda" element={<Kincseanda />} />
           <Route path="/projects/szurmik" element={<Szurmik />} />
@@ -88,10 +85,32 @@ function App() {
         </Routes>
         </CSSTransition>
       </TransitionGroup>
-
-      <Footer />
     </>
   )
+  }
+  else{
+    return (
+      <>
+        <Cursor />
+        <TransitionGroup>
+          <CSSTransition
+            timeout={500}
+            classNames="fade"
+            key = {location.key}
+            >  
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects/konyvtar" element={<Konyvtar />} />
+            <Route path="/projects/kincseanda" element={<Kincseanda />} />
+            <Route path="/projects/szurmik" element={<Szurmik />} />
+            <Route path="/projects/sorokmenti" element={<Sorokmenti />} />
+          </Routes>
+          </CSSTransition>
+        </TransitionGroup> 
+      </>
+    )
+  }
 }
 
 export default App;

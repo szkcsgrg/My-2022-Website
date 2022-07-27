@@ -1,0 +1,162 @@
+::root {
+  --color: black;
+}
+.parallax-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+.project-landing {
+  position: relative;
+  background-color: $main-color;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  z-index: 1;
+}
+.parallax-image {
+  position: relative;
+  z-index: -1;
+  transform: translateZ(-5px) scale(1.5);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sorokmenti {
+  background-image: url("../Images/projects/sorokmenti/SorokmentiShowOff.jpg");
+}
+#szurmik {
+  background-image: url("../Images/projects/szurmik/SzurmikShowOff.png");
+}
+#konyvtar {
+  background-image: url("../Images/projects/konyvtar/KonyvtarShowOff.png");
+}
+#kincseanda {
+  background-image: url("../Images/projects/kincseanda/KincseAndaShowOff.png");
+}
+.project-overview {
+  position: relative;
+  background-color: $main-color;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  z-index: 1;
+}
+.parallax-image-ui {
+  position: relative;
+  z-index: -1;
+  transform: translateZ(-5px) scale(1.5);
+  height: 60vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sorokmenti-ui {
+  background-image: url("../Images/projects/sorokmenti/SorokmentiShowUI.png");
+}
+#szurmik-ui {
+  background-image: url("../Images/projects/szurmik/SzurmikShowUI.png");
+}
+#konyvtar-ui {
+  background-image: url("../Images/projects/konyvtar/KonyvtarShowUI.png");
+}
+#kincseanda-ui {
+  background-image: url("../Images/projects/kincseanda/KincseAndaShowUI.png");
+}
+.project-reference {
+  background-color: $font-color;
+  color: $main-color;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  z-index: 1;
+  ::selection {
+    background-color: $main-color;
+    color: $font-color;
+  }
+}
+.project-arrow {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  h1 a {
+    transition: text-decoration 0.5s ease-in-out;
+    display: block;
+    position: relative;
+    font-size: clamp(3.5rem, 2.5vw, 5rem);
+    color: $font-color;
+  }
+  h1 a:hover {
+    text-decoration: underline 0.08em var(--color);
+  }
+}
+@media screen and (min-width: $medium) {
+  .project-landing {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 2.5vw;
+    padding-left: 2.5vw;
+  }
+  .parallax-image {
+    height: 80vh;
+  }
+  .project-overview {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 2.5vw;
+    padding-left: 2.5vw;
+  }
+  .parallax-image-ui {
+    height: 80vh;
+  }
+  .project-reference {
+    padding-left: 2.5vw;
+    padding-left: 2.5vw;
+  }
+  .project-arrow {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 2.5vw;
+    padding-left: 2.5vw;
+  }
+}
+@media screen and (min-width: $large) {
+  .project-landing {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    padding-left: 5vw;
+    padding-left: 5vw;
+  }
+  .parallax-image {
+    height: 100vh;
+  }
+  .project-overview {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    padding-left: 5vw;
+    padding-left: 5vw;
+  }
+  .parallax-image-ui {
+    height: 100vh;
+  }
+  .project-reference {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    padding-left: 5vw;
+    padding-left: 5vw;
+  }
+  .project-arrow {
+    padding-top: 45vh;
+    padding-bottom: 45vh;
+    padding-left: 5vw;
+    padding-left: 5vw;
+  }
+}

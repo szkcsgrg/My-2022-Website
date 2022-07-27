@@ -2,7 +2,6 @@ nav {
   height: 4em;
   z-index: 1030;
   transition: transform 0.5s ease-in-out;
-  position: relative;
 }
 
 nav .logo {
@@ -12,7 +11,7 @@ nav .logo {
   left: 0.7em;
   font-size: 1.5rem;
   font-family: $fontRaleway;
-  position: relative;
+  position: absolute;
 }
 
 .burger {
@@ -68,6 +67,7 @@ nav .logo {
   position: fixed;
   overflow: hidden;
   height: 100%;
+  width: 100%;
   background-color: $main-color;
   color: $font-color;
   z-index: 1000;
@@ -89,6 +89,7 @@ nav .logo {
 @media screen and (min-width: $medium) {
   .navigation-menu {
     right: 0;
+    width: 30%;
   }
 }
 @media screen and (min-width: $large) {

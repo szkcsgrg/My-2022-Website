@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import {CursorChangeLogo, CrusorChangeLogoEnd, CursorChangeNavbarLinks, CursorChangeNavbarLinksEnd, CursorChangeHamburger, CursorChangeHamburgerEnd} from "./Cursor";
 import { HashLink } from 'react-router-hash-link';
+import {CursorChangeLogo, CrusorChangeLogoEnd, CursorChangeNavbarLinks, CursorChangeNavbarLinksEnd, CursorChangeHamburger, CursorChangeHamburgerEnd} from "./Cursor";
 
 function Navbar() {
   return (
@@ -21,13 +21,11 @@ function Navbar() {
               navigationMenu = document.getElementById("navigation-menu").classList.toggle("d-show");
               let burger = document.getElementById('burger').classList.toggle("burger-active");
             }}>
-                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd}><Link to='/'>Home</Link></li>
-                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd}><Link to='/about'>About</Link></li>
-                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd}><HashLink 
-                // to='/about#'
-                to='/about#references'>References</HashLink></li>
-                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd}><Link to='/contact'>Contact</Link></li>
-                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd}><Link to='/projects'>Projects</Link></li>
+                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd} onMouseDown={CursorChangeNavbarLinksEnd}><Link to='/'>Home</Link></li>
+                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd} onMouseDown={CursorChangeNavbarLinksEnd}><Link to='/about'>About</Link></li>
+                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd} onMouseDown={CursorChangeNavbarLinksEnd}><HashLink to='/about#references'>References</HashLink></li>
+                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd} onMouseDown={CursorChangeNavbarLinksEnd}><HashLink to='#contact'>Contact</HashLink></li>
+                <li onMouseEnter={CursorChangeNavbarLinks} onMouseLeave={CursorChangeNavbarLinksEnd} onMouseDown={CursorChangeNavbarLinksEnd}><HashLink to='/#projects'>Projects</HashLink></li>
             </ul>
         </div>
       </div>

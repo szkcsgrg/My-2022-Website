@@ -1,6 +1,9 @@
 import React from 'react'
+import Footer from "./Components/Footer";
+
 import {Link} from 'react-router-dom';
 import {CursorChangeFooter, CursorChangeFooterEnd} from "./Components/Cursor";
+//Images
 import Image_01 from "./Images/me/01.png";
 import Image_02 from "./Images/me/02.png";
 import Image_03 from "./Images/me/03.png";
@@ -14,9 +17,8 @@ import 'swiper/css';
 
 function About() {
   return (
-    
     <section className="container-fluid min-vh-100 d-flex flex-column">
-      
+
       {/* About Landing Screen Start */}
       <section className="about-landing text-start text-wrap d-flex flex-column">
           <h1>
@@ -27,7 +29,6 @@ function About() {
       {/* About Landing Screen End */}
 
       {/* About Me Start */}
-      {/* row about-aboutme align-items-center d-flex justify-content-center flex-row-reverse */}
       <section className="about-me d-flex justify-content-center flex-column flex-md-row-reverse align-items-center">
         <div className="col-12 col-md-6 image-wrap text-center">
           <img id='aboutmeImage' loading="lazy" src={Image_01} alt="Image of Gergő Szakács" />
@@ -47,7 +48,7 @@ function About() {
           Now I am here to make some awesome web pages. If you have any ideas or any questions, feel free to get in touch with me. <br />
         </p>
         <p>
-          Could you view the <Link to='/projects'>Latest Projects</Link> or make <Link to='/contact'>Contact</Link> with me?
+          Could you view the <Link to='/#projects'>Latest Projects</Link> or make <Link to='/contact'>Contact</Link> with me?
         </p>
         </div>
       </section>
@@ -67,7 +68,7 @@ function About() {
               <p>"Gergő is one of the smoothest people that I've worked with. <br /> He did exactly what I wanted, and he replied to my needs quickly as well. <br /> If I sent him a message about a change I wanted, he replied as soon as he could and he changed It on the website. <br /> In the future, I will call him again If I need any kind of website development."</p>
             </div>
             <div className="col-12 col-md-4 button-wrap text-center text-md-start m-3">
-              <Link to='/projects/szurmik'>View the Project</Link>
+              <Link to='/projects/szurmik' id='button_1'>View the Project</Link>
             </div>
           </SwiperSlide>
 
@@ -77,7 +78,7 @@ function About() {
               <p>"I believe despite young age you have done everything very thoughtfully and purposefully. <br /> You have done the work with due consideration for my requests and with the necessary creativity. <br /> Thank you once again!" (Translated to English)</p>
             </div>
             <div className="col-12 col-md-4 button-wrap text-center text-md-start m-3">
-              <Link to='/projects/sorokmenti'>View the Project</Link>
+              <Link to='/projects/sorokmenti' id='button_1'>View the Project</Link>
             </div>
           </SwiperSlide>
         </Swiper>
@@ -94,7 +95,7 @@ function About() {
         </div>
       </section>
       {/* Images End */}
-      
+      <Footer />
     </section>
   )
 }

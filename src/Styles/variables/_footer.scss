@@ -2,18 +2,21 @@ footer {
   background-color: $font-color;
   color: $main-color;
   height: 20vh;
+  .footer-wrap {
+    position: relative;
+  }
   p::selection,
   p a::selection {
     background-color: $main-color;
     color: $font-color;
   }
   p {
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   }
   a {
     text-decoration: none;
     color: $main-color;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   }
   a:hover {
     text-decoration: underline;
