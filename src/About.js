@@ -36,7 +36,7 @@ function About() {
         <div className="col-12 col-md-6 text-wrap my-4 mx-4">
         <h3>Szakács Gergő</h3>
         <p>
-          Five years ago I officially started to learn IT in school. <br />
+          Six years ago I officially started to learn IT in school. <br />
           When I first met with HTML and CSS I knew I want to work in that kind of area. <br />
           Detailed information about my knowledge can be seen in my <a href="https://drive.google.com/drive/folders/1sAdNNc-l2TDtQUWr9vv6opq0c2EAIzT_" target="_blank">Resume</a>.
         </p>
@@ -81,6 +81,17 @@ function About() {
               <Link to='/projects/sorokmenti' id='button_1'>View the Project</Link>
             </div>
           </SwiperSlide>
+
+          <SwiperSlide className='swiper-slide align-items-center d-flex flex-column flex-lg-row'>
+            <div className="col-10 col-md-8 text-wrap">
+              <h3>Kincse Anda - Csokor, Koszorú, Dekor</h3>
+              <p>"The creation of the website went very smoothly with Gergő, after the first discussion of my ideas, I got the overall picture I expected almost immediately. <br /> He was flexible, kind, and knowledgeable throughout and I could turn to him with confidence at any time. <br /> My site became easy to use and sophisticated." (Translated to English)</p>
+            </div>
+            <div className="col-12 col-md-4 button-wrap text-center text-md-start m-3">
+              <Link to='/projects/kincseanda' id='button_1'>View the Project</Link>
+            </div>
+          </SwiperSlide>
+
         </Swiper>
       </section>
       {/* Reference End */}

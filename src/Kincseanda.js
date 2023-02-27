@@ -46,6 +46,14 @@ function Kincseanda() {
 
         <div id='kincseanda-ui' className="parallax-image-ui"></div>
 
+        <section className="project-reference row text-wrap d-flex flex-column">
+          <p>
+          <b>Kincse Anda </b> <span>-</span> <br />
+            <q>The creation of the website went very smoothly with Gergő, after the first discussion of my ideas, I got the overall picture I expected almost immediately. <br /> He was flexible, kind, and knowledgeable throughout and I could turn to him with confidence at any time. <br /> My site became easy to use and sophisticated.
+            </q>  (Translated to English)
+          </p>
+        </section>
+
         <section className="project-arrow row text-wrap text-center d-flex flex-column">
           <h1>  
             <Link to='/projects/konyvtar'>
